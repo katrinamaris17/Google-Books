@@ -8,6 +8,8 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
+
+
 class Home extends Component {
   state = {
     books: [],
@@ -61,15 +63,15 @@ class Home extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-            <Jumbotron>
-              <h1 className="text-center">
-                <strong>(React) Google Books Search</strong>
-              </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
-            </Jumbotron>
+          <Jumbotron>
+                  <h1 className="text-center">
+                    <strong>Virtual Library with Google Books</strong>
+                  </h1>
+                  <h3 className="text-center">Search and Save Your Favorite Books</h3>
+              </Jumbotron>
           </Col>
           <Col size="md-12">
-            <Card title="Book Search" icon="far fa-book">
+            <Card title="Search Books Here" icon="far fa-book">
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
